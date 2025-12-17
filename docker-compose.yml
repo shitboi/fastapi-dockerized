@@ -5,7 +5,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     expose:
-      - "8000" # Expose port 8000 internally to the Docker network
+      - "80" # Expose port 80 internally to the Docker network
     environment:
       # Optional: Trust the Nginx proxy to handle IP forwarding properly
       FORWARDED_ALLOW_IPS: "*" 
